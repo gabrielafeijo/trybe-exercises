@@ -4,6 +4,7 @@ header {
 
 section {
   text-align: center;
+  display: block;
 }
   .first {
     background-color: rgb(235, 200, 84);
@@ -21,7 +22,7 @@ section {
     height: 50px;
     text-align: center;
     width: 300px;
-    display: inline-block;
+    display: block;
     margin: auto;
   }
 
