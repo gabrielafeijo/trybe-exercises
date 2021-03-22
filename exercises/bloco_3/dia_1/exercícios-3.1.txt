@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1>Exercícios - 3.1. HTML & CSS - Estruturas de página</h1>
+    <h2>Lista das pessoas que já fiz amizade na Trybe</h2>
+        <ol>
+            <li>Nalu</li>
+            <li>Lucas</li>
+            <li>G3 - Aliança Rebelde</li>
+        </ol>
+    <h2>Imagem que venha de uma URL externa</h2>
+    <img src="https://s.ebiografia.com/img/og/at/o_gato_com_peixes_vermelhos_matisse.jpg" alt="Imagem colorida de um gato amarelo tentando pegar peixes vermelhos em um pote de vidro com água verde, em cima de uma mesinha de centro azul.">
+    <h2>Imagem que está no meu computador</h2>
+    <img src="o_perequito_e_a_sereia.jpg">
+  </body>
+</html>
