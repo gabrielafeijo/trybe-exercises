@@ -6,6 +6,11 @@ section {
   text-align: center;
   display: block;
 }
+
+.text-section{
+  display: block;
+}
+
   .first {
     background-color: rgb(235, 200, 84);
     font-size: 20px;
@@ -22,7 +27,7 @@ section {
     height: 50px;
     text-align: center;
     width: 300px;
-    display: block;
+    display: inline-block;
     margin: auto;
   }
 
