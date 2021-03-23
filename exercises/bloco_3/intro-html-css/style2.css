@@ -1,9 +1,51 @@
-#primeira-seção{
- text-align: justify;
- background-color: green;
+body{
+    margin: 0;
+}
+
+.nav{
+    background-color: royalblue;
+}
+
+.inicial{
+    display: inline-block;
+    width: 33,333%;
+    background-color: rgb(14, 112, 107);
+    margin: auto;
+}
+
+.sobre{
+    width: 33,333%;
+    display: inline-block;
+    margin: auto;
+    background-color: rgb(13, 134, 128);
+}
+
+.contato{
+    width: 33,333%;
+    display: inline-block;
+    margin-left: auto;
+    background-color: rgb(6, 145, 138);
 }
 
 h3{
     font-style: italic;
 }
+
+#primeira-seção{
+ text-align: justify;
+ background-color: green;
+ margin-left: auto;
+ display: inline-block;
+}
+
+table{
+    margin: auto;
+}
+
+.img-ps{
+    width: 20%;
+    display: inline-block;
+}
+
+
 
