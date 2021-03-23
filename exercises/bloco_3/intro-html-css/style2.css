@@ -1,9 +1,14 @@
 body{
     margin: 0;
+    background-color: rgb(38, 107, 92);
 }
 
+header{
+    text-align: center;
+}
 .nav{
     background-color: royalblue;
+    display: inline-block;
 }
 
 .inicial{
@@ -11,6 +16,7 @@ body{
     width: 33,333%;
     background-color: rgb(14, 112, 107);
     margin: auto;
+
 }
 
 .sobre{
@@ -27,14 +33,27 @@ body{
     background-color: rgb(6, 145, 138);
 }
 
+h2{
+    text-align: center;
+}
+
 h3{
     font-style: italic;
+    text-align: center;
+}
+
+.text-section{
+    text-align: justify;
+    margin-left: auto;
+    width: 70%;
+    display: inline-block;
+    float: right;
 }
 
 #primeira-seção{
  text-align: justify;
  background-color: green;
- margin-left: auto;
+ margin: auto;
  display: inline-block;
 }
 
