@@ -5,6 +5,24 @@ for (let index=0; index <numbers.length; index+=1) {
   console.log (numbers[index]);
 }
 
+for (let indice of numbers) {
+  console.log (indice);
+}
+
+//a. Define a variável numbers em um array;
+//b. Insere a função for;
+//c. Insere a variável contadora index; 
+//d. Informa a posição inicial (0);
+//e. Informa o percurso - a partir do contador (0 - posição inicial) passando por todo o array (numbers.lenght) - isto é, uma condição!;
+//f. Incrementa o contador (index) em uma posição (+=1);
+//g. Imprime (console.log) toda a variável numbers (numbers[index]);
+
+//a. Define a variável numbers em um array;
+//b. Insere a função for of (let variável/contador (indice) (AQUI IDENTIFICA COMO VARIÁVEL OU CONTADOR?) of array (numbers));
+//c. Imprime (console.log) toda a variável (indice).
+
+// Eu resolvi o problema? Sim. Havia outras maneiras de resolver o problema? Sim. A maneira que eu escolhi foi a mais eficiente possível? Não, o for of era mais eficiente. Seria possível inverter ou retirar algum passo? Acredito que não. Se eu fosse um computador, conseguiria entender todas as intruções? Sim!
+
 //2 - Para o segundo exercício, você deve somar todos os valores contidos no array e imprimir o resultado;
 
 let sum = 0;
@@ -12,6 +30,25 @@ for (let indice=0; indice <numbers.length; indice+=1) {
   sum += numbers[indice];  
 }
 console.log(sum);
+
+for (let sum of numbers) {
+  sum += numbers;
+}
+console.log(sum);
+//a. Definir variável soma;
+//b. Insere a função for;
+//c. Insere a variável contadora (indice); 
+//d. Informa a posição inicial (0);
+//e. Informa o percurso - a partir do contador (0 - posição inicial) passando por todo o array (numbers.lenght) - isto é, uma condição!;
+//f. Incrementa o contador (index) em uma posição (+=1);
+//g. Atualiza o valor da variável soma (sum += numbers[indice] --> sum = sum + numbers[indice]);
+//h. Imprime a soma;
+
+//a. Definir variável soma;
+//b. Insere a função for of (let variável (sum) of array (numbers));
+//c. Imprime (console.log) toda a variável (indice).
+
+// Eu resolvi o problema? Sim. Havia outras maneiras de resolver o problema? Sim. A maneira que eu escolhi foi a mais eficiente possível? Não, o for of era mais eficiente. Seria possível inverter ou retirar algum passo? Acredito que não. Se eu fosse um computador, conseguiria entender todas as intruções? Sim!
 
 //3 - Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array;
 
