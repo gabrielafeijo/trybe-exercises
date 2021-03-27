@@ -1,0 +1,40 @@
+ol{
+  background-color: yellow;
+}
+
+.par{
+  color:green;
+}
+
+.primo {
+  text-transform: uppercase;
+  color:hotpink;
+}
+
+.header{
+  color:red;
+}
+
+.em{
+  width: 40px;
+  border: 1px black solid;
+}
+
+li{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.color-blue{
+  color:blue;
+}
+
+.back-pink{
+  background-color: hotpink;
+}
+
+div ul li a:hover {
+  font-weight:bold;
+  color: orange;
+}
