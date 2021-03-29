@@ -1,3 +1,4 @@
+//Objetos
 let player = {
   name: 'Marta',
   lastName: 'Silva',
@@ -15,4 +16,45 @@ console.log('A jogadora' + ' ' + player.name + ' ' + player.lastName + ' ' + 'fo
 
 console.log('A jogadora possui' + ' ' + player.medals.golden + ' ' + 'medalhas de ouro' + ' ' +  'e' + ' ' +  player.medals.silver + ' ' + 'medalhas de prata.')
 
+//For/in
+let car = {
+  type: 'Fiat',
+  model: '500',
+  color: 'white',
+};
 
+for (let index in car) {
+  console.log(index, car[index]);
+}
+
+let food = ['hamburguer', 'bife', 'acarajé'];
+for (let position in food) {
+  console.log(position);
+}
+
+for (let value of food) {
+  console.log(value);
+}
+
+let names = {
+  person1: 'João',
+  person2: 'Maria',
+  person3: 'Jorge' 
+} 
+
+for (let indice in names) {
+  console.log('Olá ' + names[indice]);
+}
+
+
+let carro = {
+  model: 'A3 Sedan',
+  manufacturer: 'Audi',
+  year: 2020
+}
+
+for (let i in carro) {
+  console.log(i + ':', carro[i]);
+}
+
+//Funções
