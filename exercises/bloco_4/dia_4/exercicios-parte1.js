@@ -36,4 +36,3 @@ let info2 = {
 for (let index in info2){
   console.log(info[index] + ' e ' + info2[index]);
 }
-
