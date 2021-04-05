@@ -39,8 +39,43 @@
       </div>
     </div>
     <script>
-      document.getElementsByTagName('p')[1].innerText = 'Criando meus próprios sistemas integrados';
+      function changeTag() {
+        let tag = document.getElementsByTagName('p')[1];
+        tag.innerText = 'Criando meus próprios sistemas integrados';
+      };
+      changeTag();
+      
+      function changeColor() {
+        let squareColor1 = document.getElementsByClassName('main-content')[0];
+        squareColor1.style.backgroundColor = 'rgb(76,164,109)';
+      };
+      changeColor();
 
+      function changeRedSquare() {
+        let squareColor2 = document.getElementsByClassName('center-content')[0];
+        squareColor2.style.backgroundColor = 'white';
+      };
+      changeRedSquare();
+
+      function changeTagH1() {
+        let tagH1 = document.getElementsByTagName('h1')[0];
+        tagH1.innerText = 'Exercício 5.1 - JavaScript';
+      };
+      changeTagH1();
+
+      function changeParagraph() {
+        let paragraph = document.getElementsByTagName('p')[0];
+        paragraph.style.textTransform = 'uppercase';
+      };
+      changeParagraph();
+
+      function showTags() {
+        let paragraphContent = document.getElementsByTagName('p');
+        for (let index =0; index < paragraphContent.length; index += 1){
+          console.log(paragraphContent[index].innerText);
+        }
+      };
+      showTags();
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
