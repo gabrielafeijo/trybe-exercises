@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href="styles.css">
+</head>
+<body>
+  <h1>Formulário</h1>
+  <form action="" method="GET">
+    <fieldset>
+      <div>
+        <label for="">Nome:
+          <input type="text" name="nome" maxlength="40" required>
+        </label>
+      </div>
+    
+      <div>
+        <label for="">E-mail:
+          <input type="email" name="email" maxlength="50" required>
+        </label>
+      </div>
+      
+      <div>
+        <label for="">CPF:
+          <input type="text" name="cpf" maxlength="11" required>
+        </label>
+      </div>
+      
+      <div>
+        <label for="">Endereço:
+          <input type="text" name="endereço" maxlength="200" required>
+        </label>
+      </div>
+      
+      <div>
+        <label for="">Cidade:
+          <input type="text" name="cidade" maxlength="28" required>
+        </label>
+      </div>
+
+      <div>
+        <label for="">Estado: 
+          <select type="combobox" name="estado" id ='estado' required></select>
+        </label>
+      </div>
+
+      <div>
+        <label for="">Tipo:
+          <input type="radio" name="tipo" id='casa' required> <span>Casa</span>
+          <input type="radio" name="tipo" id='apartamento' required> <span>Apartamento</span>
+        </label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <label for="">Resumo do currículo:</label>
+          <textarea type="text" name="resumo" maxlength="1000" required></textarea>
+      </div>
+
+      <div>
+        <label for="">Cargo:
+          <input type="text" name="cargo" maxlength="40" required>
+        </label>
+      </div>
+
+      <div>
+        <label for="">Descrição do Cargo:
+          <input type="text" name="descricao-cargo" maxlength="500" required>
+        </label>
+      </div>
+
+      <div>
+        <label for="">Data de Início:
+          <input type="date" name="inicio" min ='1' max="31" required>
+        </label>
+      </div>
+      <!-- 
+      Data de início - Texto
+     3 - Logo abaixo do formulário, crie um botão que:
+Chame uma função JavaScript que interrompa o fluxo automático do form utilizando o preventDefault() .
+Execute as validações que foram pedidas ao longo da montagem do formulário.
+Monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
+
+  4 - Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
+  -->
+    </fieldset>
+  </form>
+  <button class="submit-button" type="button">Enviar</button>
+  <button class="clear-button" type="button">Limpar</button>
+  
+  <script src="script.js"></script>  
+</body>
+
+</html>
