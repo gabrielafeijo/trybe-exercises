@@ -1,14 +1,14 @@
-const estados = ['', 'Acre','Alagoas','Amapá','Amazonas','Bahia','Ceará','Distrito Federal','Espirito Santo','Goiás','Maranhão','Mato Grosso do Sul','Mato Grosso','Minas Gerais','Pará','Paraíba','Paraná','Pernambuco','Piauí','Rio de Janeiro','Rio Grande do Norte','Rio Grande do Sul','Rondônia','Roraima','Santa Catarina','São Paulo','Sergipe','Tocantins']; 
+/* const estados = ['', 'Acre','Alagoas','Amapá','Amazonas','Bahia','Ceará','Distrito Federal','Espirito Santo','Goiás','Maranhão','Mato Grosso do Sul','Mato Grosso','Minas Gerais','Pará','Paraíba','Paraná','Pernambuco','Piauí','Rio de Janeiro','Rio Grande do Norte','Rio Grande do Sul','Rondônia','Roraima','Santa Catarina','São Paulo','Sergipe','Tocantins']; 
 const getSelect = document.getElementById('estado');
 
 function getState () {
-  for (let index in estados) {
+  for (let estado in estados) {
     const createOption = document.createElement('option');
     getSelect.appendChild(createOption);
-    createOption.innerHTML = estados[index];
+    createOption.innerHTML = estados[estado];
   }
 }
-getState();
+getState(); */
 
 /* function renderCurriculum(event) {
   event.preventDefault();
@@ -27,4 +27,17 @@ getState();
     }
   }
 }
- */
+ */ 
+
+/* const cakes = {
+  peso: 1000,
+  sabor: 'chocolate',
+  cobertura: 'doce de leite',
+}
+
+function cakess ()  {
+  for (let chave in cakes) {
+    console.log (cakes[chave])
+  }
+}
+cakess(cakes) */
