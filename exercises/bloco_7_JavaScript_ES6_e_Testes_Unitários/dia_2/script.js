@@ -35,20 +35,12 @@ const order = {
 };
 
 const customerInfo = (order) => console.log(`Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, R. ${order.address.street}, Nº: ${order.address.number}, AP: ${order.address.apartment}`);
-
-
 customerInfo(order);  
 
-
-  
-  
-  
-  
-
-
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-
+  const newName = order['name'] = 'Luiz Silva';
+  const newPayment = order.payment = 50;
+  console.log(`Olá ${newName}, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ ${newPayment},00.`);
 }
 
 orderModifier(order);

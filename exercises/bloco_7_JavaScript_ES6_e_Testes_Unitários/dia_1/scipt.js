@@ -48,4 +48,23 @@ console.log(fatorial(6));  */
 
 //Sempre precisa ser dentro da constante? Pq a function não lê?
 const fatorial = (n) => (n===1 ? 1 : n*fatorial(n-1));
-console.log(fatorial(6)); 
+console.log(fatorial(6));
+
+//Exercício 2
+let longestWord = "Antônio foi no banheiro e não sabemos o que aconteceu";
+
+// A função recebe um número qualquer de parâmetros. Todos são agregados como valores para adicionar ao objeto de destino!
+
+const person = {
+  name:'Roberto',
+};
+
+const lastName = {
+  lastName: 'Silva',
+};
+
+const newPerson = Object.assign({},person,lastName);
+/* newPerson.name = 'Gilberto'; */
+console.log(newPerson);
+console.log(person);
+
