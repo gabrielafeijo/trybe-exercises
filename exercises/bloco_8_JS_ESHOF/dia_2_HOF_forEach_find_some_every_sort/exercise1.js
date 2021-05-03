@@ -63,13 +63,10 @@ const books = [
   },
 ];
 
-const findYear = books.find((year) => year.author.birthYear === 1947
-);
+/* onst findYear = books.find((year) => year.author.birthYear === 1947
+); */
 
-function authorBornIn1947 () {
-  return findYear.author.name;
-}
-
+const authorBornIn1947 = () => books.find((year) => year.author.birthYear === 1947).author.name;
 
 console.log(authorBornIn1947 ());
 
