@@ -17,7 +17,7 @@ const sortingNumbers = () => `Os números ${oddsAndEvens.sort()} se encontram or
 
 console.log(sortingNumbers(oddsAndEvens)); */
 
-/* Adicionei os parâmetros de comparação. Não se engane, o Google te ajudou. Você ainda não entendeu pq o sort não funcionou sozinho. Referência - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort*/
+/* Adicionei os parâmetros de comparação. Não se engane, o Google te ajudou. Você ainda não entendeu pq o sort não funcionou sozinho. Referência - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort  Entendido! Gisele!!!!!!!*/
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 oddsAndEvens.sort((a, b) => a - b);
@@ -53,18 +53,12 @@ console.log(fatorial(6));
 //Exercício 2
 let longestWord = "Antônio foi no banheiro e não sabemos o que aconteceu";
 
-// A função recebe um número qualquer de parâmetros. Todos são agregados como valores para adicionar ao objeto de destino!
+const assert = require('assert');
 
-const person = {
-  name:'Roberto',
-};
+function division(x, y) {
+  if (y === 0) throw new Error('parameter y must not be 0');
+  return x / y;
+}
 
-const lastName = {
-  lastName: 'Silva',
-};
-
-const newPerson = Object.assign({},person,lastName);
-/* newPerson.name = 'Gilberto'; */
-console.log(newPerson);
-console.log(person);
-
+assert.strictEqual(division(10, 2), 5); // OK
+assert.throws(() => { division(10, 0); }, /^Error: parameter y must not be 0$/); // OK
