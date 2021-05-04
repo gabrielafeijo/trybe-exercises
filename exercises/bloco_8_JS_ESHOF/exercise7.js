@@ -65,7 +65,7 @@ const books = [
 ];
 
 const expectedResult = 'O Senhor dos Anéis';
-//Gabarito traz essa sugestão de 'quebrar' o nome --> filtrar o que termina com ponto e tem 3 por tamanho. Genial!! Tentar retornar nesse. Se você conseguir! Não se cobre. Você tá indo super bem. 
+//Gabarito traz essa sugestão de 'quebrar' o nome --> filtrar o que termina com ponto e tem 3 por tamanho. Genial!! Tentar retornar nesse. Se você conseguir! Não se cobre. Você tá indo super bem. Ps. Se escrever George R. R. Martin. vai retornar As Crônicas de Gelo e Fogo. =S --> Input Gi!
 
 const authorWith3DotsOnName = () => books.find((initials) => (
   initials.author.name.split(' ').filter((word) => word.endsWith('.')).length === 3
