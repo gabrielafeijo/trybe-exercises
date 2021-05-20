@@ -1,8 +1,7 @@
-function hydrate(beverage) {
-  if (beverage === 1) {
-    return `1 copo de água`
-  }
+function hydrate(string) {
+  return string.split(' ').map(Number).filter(Number).reduce((acc, curr) => acc + curr , 0) === 1 ? `1 copo de água` : `${string.split(' ').map(Number).filter(Number).reduce((acc, curr) =>  acc + curr, 0)} copos de água`;
 }
+
 console.log(hydrate('1 cerveja'))
 
 module.exports = { hydrate };
