@@ -144,19 +144,8 @@ if (custoProduto < 0 || valorVenda < 0) {
 
 // Exercise 11 - Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 /* A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
-IR (Imposto de Renda)
+Resultado: R$ 2.612,55.*/
 
-Exemplo : Uma pessoa possui o salário bruto de R$ 3.000,00. O cálculo será:
-O salário bruto está entre R$ 2.594,93 e R$ 5.189,82, então sua alíquota para INSS é de 11%. O INSS será 11% de R$ 3.000, ou seja, R$ 330,00.
-Para descobrir o salário-base, subtraia do salário bruto a alíquota do INSS: R$ 3.000,00 - R$ 330,00 = R$ 2.670,00.
-Para pegar o valor do IR, temos um salário (já deduzido o INSS) entre R$ 1.903,99 e 2.826,65, sendo a alíquota, então, de 7.5%, com parcela de R$ 142,80 a deduzir do imposto. Assim, temos:
-R$ 2.670,00: salário com INSS já deduzido;
-7.5%: alíquota de imposto de renda;
-R$ 142,80 parcela a se deduzir do imposto.
-Fazendo a conta, temos: (7,5% de R$ 2.670,00) - R$ 142,80 = R$ 57,45
-O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
-Resultado: R$ 2.612,55.
-Dica: que tal identificar as alíquotas com variáveis de nomes explicativos? */
  let salario = 3000;
  let inss;
  let ir;
