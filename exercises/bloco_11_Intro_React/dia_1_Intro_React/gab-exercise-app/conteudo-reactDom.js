@@ -1,5 +1,5 @@
 //ReactDOM.render
-
+/* 
 function tick() {
   const element = (
     <div>
@@ -10,10 +10,10 @@ function tick() {
   ReactDOM.render(element, document.getElementById('root'));
 }
 
-setInterval(tick, 1000);
+setInterval(tick, 1000); */
 
 //Classes
-import React from 'react';
+/* import React from 'react';
 
 class ReactClass extends React.Component {
   render() {
@@ -21,4 +21,4 @@ class ReactClass extends React.Component {
       <h1>My first React Class Component!</h1>
     )
   }
-}
+} */
