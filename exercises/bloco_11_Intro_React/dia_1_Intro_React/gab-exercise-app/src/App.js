@@ -1,11 +1,13 @@
 import React from 'react';
-import nameAndDescription from './Component'
+import NameAndDescription from './Component'
 import './App.css';
 
 function App() {
-  return <nameAndDescription />;
+  return <NameAndDescription />;
 }
 
 export default App;
 
 //Não consegui puxar nesse formato, apenas como função!
+//return <nameAndDescription />;
+//return nameAndDescription();
