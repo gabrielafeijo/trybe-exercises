@@ -5,7 +5,7 @@ function nomeCompleto (nome, sobrenome) {
   return `${nome} ${sobrenome}`;
 }
 
-const element = <h1>Hello, {nomeCompleto("Jorge", "Maravilha")}</h1>;
+const elementos = <h1>Hello, {nomeCompleto("Jorge", "Maravilha")}</h1>;
 
 //JSX
 function helloWorld (nome, sobrenome) {
@@ -14,11 +14,11 @@ function helloWorld (nome, sobrenome) {
 
 const container = <div>{helloWorld("Anna", "Silveira")}</div>;
 
-const nome = 'Jorge Maravilha';
+const Nomes = 'Jorge Maravilha';
 const classe = 'hello-class';
-const element = <h1 className={classe}>Hello, {nome}</h1>;
+const elemento = <h1 className={classe}>Hello, {Nomes}</h1>;
 
 //exercises - crie um elemento JSX que recebe o valor "Hello, JSX" de uma constante chamada textJSX , e o incorpora em uma tag h1 .
 
 const textJSX = 'Hello, JSX';
-const elementJSX = <h1 className={classe}> {textJSX}</h1>;
+const elementoJSX = <h1 className={classe}> {textJSX}</h1>;
