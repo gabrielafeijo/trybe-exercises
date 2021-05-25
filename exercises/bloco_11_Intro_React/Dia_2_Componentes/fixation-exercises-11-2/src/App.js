@@ -1,4 +1,46 @@
-import Image from './image';
+// arquivo App.js, criado pelo create-react-app, modificado
+import React from 'react';
+import './App.css';
+import Order from './Order';
+
+class App extends React.Component {
+  render() {
+    const orders = [
+      {
+      id: 102,
+      user: "cena@gmail.com",
+      product: "Razer Headphone",
+      price: {
+        value: 99.99,
+        currency: "dollars"
+      }
+    },
+
+    {
+      id: 77,
+      user: "cena@gmail.com",
+      product: "Monster 500mL",
+      price: {
+        value: 9.99,
+        currency: "dollars"
+      }
+    }
+  ]
+    return (
+      <>
+      <h1 className="App"> Orders recently created </h1>
+      {orders.map((user) => 
+      (<div key = {user.id} className="App">
+        <Order user={user.user} product={user.product} price={user.price} />
+      </div>))}
+      </>
+      );
+  }
+}
+
+export default App;
+
+/* import Image from './image';
 
 function App() {
   return (
@@ -6,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; */
