@@ -5,7 +5,7 @@ import Order from './Order';
 
 class App extends React.Component {
   render() {
-    const orders = [
+    const orders  = [
       {
       id: 102,
       user: "cena@gmail.com",
@@ -26,17 +26,20 @@ class App extends React.Component {
       }
     }
   ]
+
     return (
       <>
       <h1 className="App"> Orders recently created </h1>
       {orders.map((user) => 
       (<div key = {user.id} className="App">
-        <Order user={user.user} product={user.product} price={user.price} />
+        <Order order={user.user} product={user.product} price={user.price} />
       </div>))}
       </>
       );
   }
 }
+
+/* user={user.user} product={user.product} price={user.price}  */
 
 export default App;
 

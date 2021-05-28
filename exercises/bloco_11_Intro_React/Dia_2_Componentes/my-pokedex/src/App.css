@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.pokemon {
+  text-align: center;
+  border: solid 2px red;
+  flex-flow: row wrap;
+}
