@@ -13,5 +13,6 @@ export default class InputState extends Component {
         ))
         
       }
-      </select>
-);
+      </select>)
+  }
+};

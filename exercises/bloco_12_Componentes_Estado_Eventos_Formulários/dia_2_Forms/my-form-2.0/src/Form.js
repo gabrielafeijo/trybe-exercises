@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MyInput from './MyInput'
-import inputState from './inputState'
+import InputState from './inputState'
 export default class Form extends Component {
   constructor() {
     super()
@@ -52,6 +52,7 @@ export default class Form extends Component {
           <MyInput handleChanges = {this.handleChanges}/>
           <label>Estado: 
           <select onChange = {this.handleChanges} type="ComboBox" name="estado" maxLength = '28' placeholder="Digite seu cidade aqui"  value={this.state.estado.inputState} required />
+          <InputState />
           </label>
           
 
