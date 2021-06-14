@@ -11,13 +11,14 @@ console.log('Bem vinda, ' + info.personagem);
 //2. Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e, em seguida, imprima o objeto no console.
 
 info['recorrente'] = 'Sim';
+info.ouRecorrente = 'Sim';
 
 console.log(info);
 
 //3. Faça um for/in que mostre todas as chaves do objeto.
 
-for (let index in info) {
-  console.log(index);
+for (let keys in info) {
+  console.log(keys);
 }
 
 //4. Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto.
@@ -34,5 +35,10 @@ let info2 = {
   recorrente: 'Sim'
 };
 for (let index in info2){
-  console.log(info[index] + ' e ' + info2[index]);
+  if (index === 'recorrente' && info[index] === 'Sim' && info2[index] === 'Sim') {
+      console.log('Ambos recorrentes');
+    } else {
+      console.log(info[index] + ' e ' + info2[index]);
+    }
+
 }
