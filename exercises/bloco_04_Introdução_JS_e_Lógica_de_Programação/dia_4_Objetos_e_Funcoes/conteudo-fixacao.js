@@ -9,12 +9,18 @@ let player = {
   },
 }
 
+//A jogadora Marta Silva tem 34 anos de idade".
 console.log('A jogadora' + ' ' + player.name + ' ' + player.lastName + ' ' + 'tem' + ' ' + player.age + ' ' + 'anos de idade.')
+console.log(`A jogadora ${player.name} ${player.lastName} tem ${player.age} anos de idade.`)
 
-player ['bestInTheWorld'] = [2006, 2007, 2008, 2009, 2010, 2018];
+/* player['bestInTheWorld'] = [2006, 2007, 2008, 2009, 2010, 2018]; */
+
+player.bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
 console.log('A jogadora' + ' ' + player.name + ' ' + player.lastName + ' ' + 'foi eleita a melhor do mundo por' + ' ' + player.bestInTheWorld.length + ' ' + 'vezes.');
 
 console.log('A jogadora possui' + ' ' + player.medals.golden + ' ' + 'medalhas de ouro' + ' ' +  'e' + ' ' +  player.medals.silver + ' ' + 'medalhas de prata.')
+
+console.log(`A jogadora possui ${player.medals.golden} medalhas de ouro e ${player.medals.silver} medalhas de prata.`)
 
 //For/in
 let car = {
@@ -44,7 +50,8 @@ let names = {
 
 for (let indice in names) {
   console.log('Olá ' + names[indice]);
-}
+  console.log(`Olá ${names[indice]}`);
+} // exercício 1
 
 
 let carro = {
@@ -52,6 +59,8 @@ let carro = {
   manufacturer: 'Audi',
   year: 2020
 }
+
+console.log(carro)
 
 for (let i in carro) {
   console.log(i + ':', carro[i]);
