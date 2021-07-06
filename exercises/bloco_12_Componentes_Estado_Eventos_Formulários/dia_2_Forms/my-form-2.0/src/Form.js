@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import MyInput from './MyInput'
-import InputState from './inputState'
+import InputState from './InputState'
 export default class Form extends Component {
   constructor() {
     super()
@@ -16,6 +16,7 @@ export default class Form extends Component {
     }
 
     this.handleChanges = this.handleChanges.bind(this) 
+    this.onBlurHandler = this.onBlurHandler.bind(this)
 
   }
 
@@ -26,6 +27,14 @@ export default class Form extends Component {
       [ name ]: target.value
     })
     console.log(target.value)
+  }
+
+  onBlurHandler = event => {
+    let { name, value } = event.target;
+
+    if (name === 'city') value = value.match(/^\d/) ? '' : value;
+
+    this.updateState(name, value);
   }
 
 
@@ -47,16 +56,13 @@ export default class Form extends Component {
           <input onChange = {this.handleChanges} type="text" name="endereco" maxLength = '200' placeholder="Digite seu endereço aqui"  value={this.state.endereco.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '')} required />
           </label>
           <label>Cidade: 
-          <input onChange = {this.handleChanges} type="text" name="cidade" maxLength = '28' placeholder="Digite seu cidade aqui"  value={this.state.cidade} required />
+          <input onChange = {this.onBlurHandler} type="text" name="cidade" maxLength = '28' placeholder="Digite seu cidade aqui"  value={this.state.cidade} required />
           </label>
           <MyInput handleChanges = {this.handleChanges}/>
           <label>Estado: 
           <select onChange = {this.handleChanges} type="ComboBox" name="estado" maxLength = '28' placeholder="Digite seu cidade aqui"  value={this.state.estado.inputState} required />
           <InputState />
           </label>
-          
-
-
         </fieldset>
       </form>
     )
